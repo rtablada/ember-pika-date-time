@@ -30,6 +30,7 @@
     "ember-cli-qunit": "^1.1.0",
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.0.0",
+    "ember-cli-timepicker-lite": "0.1.3",
     "ember-cli-toolbelts": "0.2.8",
     "ember-cli-uglify": "^1.2.0",
     "ember-code-snippet": "1.1.3",
