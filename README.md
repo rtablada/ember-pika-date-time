@@ -2,27 +2,35 @@
 
 [![npm version](https://badge.fury.io/js/ember-pika-date-time.svg)](http://badge.fury.io/js/ember-pika-date-time)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-pika-date-time.svg)](http://emberobserver.com/addons/ember-pika-date-time)
-This README outlines the details of collaborating on this Ember addon.
+
+A component for dealing with Date and Time pickers with merged values.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-pika-date-time`
 
-## Running
+## Use
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+If you would like to use default inputs, you can just use the inline block mode of this component:
 
-## Running Tests
+```hbs
+<label>
+  Due date:
+  {{pikaday-with-time startValue=startDate binding=binding}}
+</label>
+```
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+If you would like to specify the way the inputs are styled, `pikaday-with-time` yields both the bound `date` and `time`:
 
-## Building
+```hbs
+<label>
+  Due date:
+  {{#pikaday-with-time startValue=startDate binding=binding as |date time|}}
+    <div class="mdl-textfield mdl-js-textfield">
+      {{pikaday-input class="mdl-textfield__input" value=date}}
+    </div>
 
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+    {{mdl-textfield type="time" value=time}}
+  {{/pikaday-with-time}}
+</label>
+```
