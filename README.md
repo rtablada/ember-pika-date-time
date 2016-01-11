@@ -1,5 +1,7 @@
 # Ember-pika-date-time
 
+[![npm version](https://badge.fury.io/js/ember-pika-date-time.svg)](http://badge.fury.io/js/ember-pika-date-time)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-pika-date-time.svg)](http://emberobserver.com/addons/ember-pika-date-time)
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation

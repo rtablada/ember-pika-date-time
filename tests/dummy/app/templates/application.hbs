@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
+<label>
+  Due date:
+  {{pikaday-with-time startValue=dueAt binding=binding}}
+</label>
 
-{{outlet}}
+Start Value: {{dueAt}}
+Binding: {{binding}}

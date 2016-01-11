@@ -1,0 +1,1 @@
+export { default } from 'ember-pika-date-time/components/pikaday-with-time';
