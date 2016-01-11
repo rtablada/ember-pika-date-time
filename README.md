@@ -7,7 +7,7 @@ A component for dealing with Date and Time pickers with merged values.
 
 ## Installation
 
-`ember install ember-pika-date-time`
+`ember install ember-pika-date-time ember-pikaday`
 
 ## Use
 
