@@ -3,5 +3,20 @@
   {{pikaday-with-time startValue=startDate binding=binding}}
 </label>
 
+<label>
+  Due date:
+  {{#pikaday-with-time startValue=startDate binding=binding as |date time|}}
+    <div class="mdl-textfield mdl-js-textfield">
+      {{pikaday-input class="mdl-textfield__input" value=date}}
+    </div>
+
+    {{mdl-textfield type="time" value=time}}
+  {{/pikaday-with-time}}
+</label>
+
+Start Value: {{startDate}}
+Binding: {{binding}}
+
+
 Start Value: {{startDate}}
 Binding: {{binding}}

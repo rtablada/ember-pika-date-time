@@ -1,9 +1,13 @@
-{{pikaday-input
-  value=date yearRange=yearRange
-  theme=theme format=format
-  firstDay=firstDay readonly=readonly
-  disabled=isDisabled
-  minDate=minDate maxDate=maxDate
-}}
+{{#if hasBlock}}
+  {{yield date time}}
+{{else}}
+  {{pikaday-input
+    value=date yearRange=yearRange
+    theme=theme format=format
+    firstDay=firstDay readonly=readonly
+    disabled=isDisabled
+    minDate=minDate maxDate=maxDate
+  }}
 
-{{input type="time" value=time}}
+  {{input type="time" value=time}}
+{{/if}}
